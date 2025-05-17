@@ -1,0 +1,44 @@
+import Head from 'next/head';
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-pink-50 text-gray-800 px-4 py-8">
+      <Head>
+        <title>Yummy Bites Bakery</title>
+      </Head>
+
+      <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold text-pink-700">Yummy Bites Bakery</h1>
+        <p className="text-lg text-pink-500 mt-2">Delicious treats for every occasion!</p>
+      </header>
+
+      {/* Banner Image */}
+      <div className="flex justify-center mb-10">
+        <img
+          src="/homepage-banner.png"
+          alt="Yummy Bites Bakery"
+          className="rounded-xl shadow-xl max-w-full"
+        />
+      </div>
+
+      <section className="grid md:grid-cols-3 gap-8">
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-pink-600 mb-2">Cupcakes</h2>
+          <p>Colorful, fluffy, and baked to perfection. A treat in every bite.</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-pink-600 mb-2">Cakes</h2>
+          <p>Custom cakes for birthdays, weddings, and celebrations.</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-pink-600 mb-2">Cookies</h2>
+          <p>Freshly baked cookies — crunchy, chewy, and always yummy!</p>
+        </div>
+      </section>
+
+      <footer className="text-center mt-16 text-pink-400 text-sm">
+        © 2025 Yummy Bites Bakery. All rights reserved.
+      </footer>
+    </div>
+  );
+}
